@@ -1,4 +1,3 @@
-export ENV_NAME=$(eval "echo $BS_AN_ENV | rev | cut -d/ -f1 | rev")
-export PYTHONPATH=/nsls2/data/srx/shared/config/bluesky_overlay/"$ENV_NAME"/lib/python3.9/site-packages
-source /opt/conda/bin/activate $BS_AN_ENV
+source /opt/conda/bin/activate /GPFS/XF03ID1/shared/conda_envs/nsls2-collection-2021-3.0-py39-copy
 pyxrf
+
