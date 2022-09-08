@@ -1,4 +1,4 @@
- if [ -f /etc/bsui/default_vars ]; then
-  . /etc/bsui/default_vars
-fi
- bsui /GPFS/XF03ID1/home/xf03id/user_macros/HXN_GUI/Scan/hxn_gui_2.0.py
+export ENV_NAME=$(eval "echo $BS_ENV | rev | cut -d/ -f1 | rev")
+export PYTHONPATH=/nsls2/data/srx/shared/config/bluesky_overlay/"$ENV_NAME"/lib/python3.9/site-packages
+source /opt/conda/bin/activate $BS_ENV
+bsui /nsls2/data/hxn/legacy/user_macros/HXN_GUI/Scan/hxn_gui_2.0.py
