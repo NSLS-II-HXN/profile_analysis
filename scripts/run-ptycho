@@ -13,13 +13,18 @@ export NUMBAPRO_NVVM=$CUDA_HOME/nvvm/lib64/libnvvm.so
 
 # use the production conda environment
 # source /opt/conda/bin/activate ptycho_production
-source /opt/conda/bin/activate /GPFS/XF03ID1/shared/conda_envs/ptycho_production
+# source /opt/conda/bin/activate /GPFS/XF03ID1/shared/conda_envs/ptycho_production
+
+source /opt/conda/bin/activate /nsls2/data/hxn/legacy/shared/conda_envs/ptycho_production
 
 PTYCHO_HOME=$HOME/.ptycho_gui
 if [ ! -d $PTYCHO_HOME ]; then
     mkdir $PTYCHO_HOME
 fi
 
+# export TILED_SITE_PROFILES=/nsls2/software/etc/tiled/profiles
+
 # use the script installed by pip
 #/opt/conda_envs/ptycho_production/bin/run-ptycho
-/GPFS/XF03ID1/shared/conda_envs/ptycho_production/bin/run-ptycho
+# /GPFS/XF03ID1/shared/conda_envs/ptycho_production/bin/run-ptycho
+/nsls2/data/hxn/legacy/shared/conda_envs/ptycho_production/bin/run-ptycho

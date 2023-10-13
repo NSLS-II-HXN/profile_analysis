@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /data/ppmac-rhel/repo/dls_experiment
+dzdo -u xf03id make

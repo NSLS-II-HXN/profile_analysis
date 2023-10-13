@@ -1,0 +1,5 @@
+export PYTHONPATH=/nsls2/data/hxn/shared/config/bluesky_overlay/2023-1.0-py310-tiled/lib/python3.10/site-packages
+source /opt/conda/bin/activate /nsls2/conda/envs/2023-1.0-py310-tiled
+#/nsls2/data/hxn/shared/config/bluesky_overlay/2023-1.0-py310-tiled/bin/queue-monitor
+queue-monitor
+

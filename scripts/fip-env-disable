@@ -1,0 +1,9 @@
+#!/bin/bash
+folder_startup="/nsls2/data1/hxn/shared/config/bluesky/profile_collection/startup"
+
+cd "$folder_startup"
+
+for file in 6*.py; do
+    filename="${file%.*}"
+    mv "$file" "$filename.pyd"
+done

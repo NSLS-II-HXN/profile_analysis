@@ -1,5 +1,5 @@
 export ENV_NAME=$(eval "echo $BS_AN_ENV | rev | cut -d/ -f1 | rev")
 export PYTHONPATH=/nsls2/data/hxn/shared/config/bluesky_overlay/"$ENV_NAME"/lib/python3.9/site-packages
 source /opt/conda/bin/activate $BS_AN_ENV
-ipython /nsls2/data/hxn/legacy/user_macros/HXN_GUI/Analysis/xrf_batch/xrf_xanes_3ID_gui.py
+ipython /nsls2/data/hxn/legacy/user_macros/HXN_GUI/Analysis/probe_propagation/probe_prop_gui.py
 
